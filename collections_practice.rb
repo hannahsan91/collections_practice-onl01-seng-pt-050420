@@ -1,13 +1,12 @@
 def sort_array_asc(sort_array)
-  sort_array = [25, 7, 1]
-  sort_array_asc.sort
+  array = [25, 7, 1
+  array.sort do |a, b|
+    if a == b
+      0
+    elsif a < b
+      -1
+    elsif a > b
+      1
+    end
+  end
 end
-
-def sort_array_desc(sort_array)
-  sort_array = [25, 7, 1]
-  sort_array_desc.sort
-end
-
-def sort_array_char_count
-  sort_array = [25, 7, 1]
-  sort_array_char_count.sort
